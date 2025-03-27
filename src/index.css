@@ -1,0 +1,126 @@
+/* Estilos generales */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Título */
+h2 {
+  margin-bottom: 20px;
+  color: #19647e;
+}
+
+/* Barra de búsqueda */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:1rem;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  width: 80%;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.search-bar button {
+  background-color: #28afb0;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.search-bar button:hover {
+  background-color: #19647e;
+}
+
+/* Lista de países */
+.country-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+/* Tarjeta de país */
+.country-card {
+  background: white;
+  padding: 15px;
+  margin: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.country-card:hover {
+  transform: scale(1.03);
+}
+
+/* Bandera del país */
+.country-flag {
+  width: 100px;
+  height: 70px;
+  border-radius: 5px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+/* Información del país */
+.country-info {
+  text-align: left;
+  font-size: 14px;
+}
+
+.country-info p {
+  margin: 5px 0;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+
+  .search-bar {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .search-bar input {
+    width: 100%;
+  }
+
+  .country-card {
+    width: 90%;
+  }
+}
